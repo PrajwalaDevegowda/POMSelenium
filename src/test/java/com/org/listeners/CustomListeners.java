@@ -92,20 +92,32 @@ public class CustomListeners extends Page implements ITestListener, ISuiteListen
 
 	public void onFinish(ISuite suite) {
 
-		/*
-		 * MonitoringMail mail = new MonitoringMail();
-		 * 
-		 * try { messagebody =
-		 * "Report of my First Selenium Test is ready. Please click the link to see the Report http://"
-		 * + InetAddress.getLocalHost().getHostAddress()+
-		 * ":8080/job/DataDrivenProject/HTML_20Report/"; } catch (UnknownHostException
-		 * e) { // TODO Auto-generated catch block e.printStackTrace(); }
-		 * 
-		 * try { mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to,
-		 * TestConfig.subject, messagebody); } catch (AddressException e) { // TODO
-		 * Auto-generated catch block e.printStackTrace(); } catch (MessagingException
-		 * e) { // TODO Auto-generated catch block e.printStackTrace(); }
-		 */
+		
+		 MonitoringMail mail = new MonitoringMail();
+		  
+		  try {
+			messagebody =
+			  "Report of my Secound Selenium Test is ready. Please click the link to see the Report http://"
+			  + InetAddress.getLocalHost().getHostAddress()+
+			 ":8080/job/PageObejctModelCI/Extent_20Report/";
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		  
+		   try {
+			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to,
+			  TestConfig.subject, messagebody);
+		} catch (AddressException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		  
+	
+		
 		
 	}
 
