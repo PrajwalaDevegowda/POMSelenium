@@ -7,7 +7,7 @@ public class TestConfig{
 	public static String from = "prajwalahd068@gmail.com";
 	public static String password = "prahedekuteera";
 	public static String[] to = {"pavankngl490@gmail.com"};
-	public static String subject = "My First Selenium Test Report";
+	public static String subject = "My Second Selenium Test Report";
 	
 	public static String messageBody ="TestMessage";
 	public static String attachmentPath="c:\\screenshot\\2017_10_3_14_49_9.jpg";
